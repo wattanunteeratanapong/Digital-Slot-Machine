@@ -1,5 +1,5 @@
 # Digital Slot Machine
-01076112 Digital System Fundamentals Project Assignment 2567
+01076112 Digital System Fundamentals Assignment 2567
 <br><br>
 
 ## Prototype
