@@ -1,6 +1,5 @@
 # Digital Slot Machine
-01076112 Digital System Fundamentals Assignment 2567
-<br><br>
+01076112 Digital System Fundamentals Assignment 2567 <br><br>
 
 ## Prototype
 <img src="https://github.com/user-attachments/assets/4d6849cd-51b4-4166-b97a-3bb71fcca9da" width="375" height="320"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -34,3 +33,8 @@
 <img src="https://github.com/user-attachments/assets/ffbfd364-09b1-44e4-b6b3-0d671c2db48d" width="100%" height="700"> 
 <img src="https://github.com/user-attachments/assets/036cd5c0-76b9-4164-bce9-b36f18c47d68" width="100%" height="700"> 
 <br><br>
+
+## Member
+66011464 Ratha Rocruchiphong <br>
+66011476 Wattanun Teeratanapong <br>
+<br>
