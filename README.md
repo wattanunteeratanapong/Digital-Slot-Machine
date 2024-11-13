@@ -12,7 +12,7 @@
 <br><br>
 
 ## State Diagram
-<img src="https://github.com/user-attachments/assets/67f83b39-88d1-499a-a6ae-0aeaf9dcd1c7" width="100%" height="1000"> 
+<img src="https://github.com/user-attachments/assets/67f83b39-88d1-499a-a6ae-0aeaf9dcd1c7" width="100%" height="800"> 
 <br><br>
 
 ## Slot Machine
