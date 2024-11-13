@@ -1,0 +1,22 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "ag[6]" LOC = P41;
+NET "ag[5]" LOC = P40;
+NET "ag[4]" LOC = P35;
+NET "ag[3]" LOC = P34;
+NET "ag[2]" LOC = P32;
+NET "ag[1]" LOC = P29;
+NET "ag[0]" LOC = P27;
+NET "CLK" LOC = P123;
+NET "Common0" LOC = P44;
+NET "Common1" LOC = P43;
+NET "Common2" LOC = P33;
+NET "Common3" LOC = P30;
+NET "inpt[0]" LOC = P21;
+NET "inpt[1]" LOC = P16;
+NET "inpt[2]" LOC = P14;
+NET "inpt[3]" LOC = P11;
+NET "inpt[4]" LOC = P9;
+NET "inpt[5]" LOC = P7;
+NET "inpt[6]" LOC = P5;

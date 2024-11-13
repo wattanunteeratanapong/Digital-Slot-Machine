@@ -1,0 +1,5 @@
+[Inputs]
+=binary_in[3:0]=
+[Outputs]
+=seg_out[6:0]=
+[BiDir]

@@ -1,0 +1,63 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : TopLayer.vf
+// /___/   /\     Timestamp : 11/10/2024 10:41:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/ise/DisplayMoneyFIx/TopLayer.vf -w /home/ise/DisplayMoneyFIx/TopLayer.sch
+//Design Name: TopLayer
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module TopLayer(CLK, 
+                inpt, 
+                ag, 
+                Common0, 
+                Common1, 
+                Common2, 
+                Common3);
+
+    input CLK;
+    input [6:0] inpt;
+   output [6:0] ag;
+   output Common0;
+   output Common1;
+   output Common2;
+   output Common3;
+   
+   wire XLXN_1;
+   wire [3:0] XLXN_6;
+   wire [3:0] XLXN_7;
+   wire [3:0] XLXN_17;
+   wire Common0_DUMMY;
+   
+   assign Common0 = Common0_DUMMY;
+   Divider_20K  XLXI_1 (.clk_in(CLK), 
+                       .clk_out(XLXN_1));
+   mod_2_counter  XLXI_2 (.clk(XLXN_1), 
+                         .count(Common0_DUMMY));
+   BinarySplitter  XLXI_3 (.input_bin(inpt[6:0]), 
+                          .output1(XLXN_6[3:0]), 
+                          .output2(XLXN_7[3:0]));
+   MUX21_4bit  XLXI_4 (.A(XLXN_7[3:0]), 
+                      .B(XLXN_6[3:0]), 
+                      .sel(Common0_DUMMY), 
+                      .Y(XLXN_17[3:0]));
+   BinaryToDecimalDecoder  XLXI_9 (.binary_in(XLXN_17[3:0]), 
+                                  .seg_out(ag[6:0]));
+   INV  XLXI_10 (.I(Common0_DUMMY), 
+                .O(Common1));
+   VCC  XLXI_11 (.P(Common3));
+   VCC  XLXI_12 (.P(Common2));
+endmodule

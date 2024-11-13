@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/ise/DisplayMoneyFIx/TopLayer.xst" -ofn "/home/ise/DisplayMoneyFIx/TopLayer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TopLayer.ucf -p xc6slx9-tqg144-3 TopLayer.ngc TopLayer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TopLayer_map.ncd TopLayer.ngd TopLayer.pcf 
+par -w -intstyle ise -ol high -mt off TopLayer_map.ncd TopLayer.ncd TopLayer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TopLayer.twx TopLayer.ncd -o TopLayer.twr TopLayer.pcf -ucf TopLayer.ucf 
+bitgen -intstyle ise -f TopLayer.ut TopLayer.ncd 

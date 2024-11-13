@@ -1,0 +1,6 @@
+[Inputs]
+=input_bin[6:0]=
+[Outputs]
+=output1[3:0]=
+=output2[3:0]=
+[BiDir]

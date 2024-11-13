@@ -1,0 +1,2 @@
+vhdtdtfi -lib work sdfsd.vhd -prj DisplayMoneyFIx -o Divider_20K.spl -module Divider_20K -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Divider_20K.spl /home/ise/DisplayMoneyFIx/Divider_20K.sym 

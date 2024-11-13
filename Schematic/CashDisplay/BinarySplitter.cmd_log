@@ -1,0 +1,2 @@
+vhdtdtfi -lib work gfghhf.vhd -prj DisplayMoneyFIx -o BinarySplitter.spl -module BinarySplitter -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 BinarySplitter.spl /home/ise/DisplayMoneyFIx/BinarySplitter.sym 

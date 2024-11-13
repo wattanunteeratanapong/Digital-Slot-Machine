@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sun Nov 10 10:41:23 2024
+# Process ID: 13624
+# Log file: /home/ise/DisplayMoneyFIx/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/DisplayMoneyFIx/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/ise/DisplayMoneyFIx/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {ag[0]}]]
+startgroup
+set_property package_pin P41 [get_ports {ag[6]}]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports {ag[5]}]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports {ag[4]}]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports {ag[3]}]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports {ag[2]}]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports {ag[1]}]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports {ag[0]}]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports Common0]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports Common1]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports Common2]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports Common3]
+endgroup
+startgroup
+set_property package_pin P21 [get_ports {inpt[0]}]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports {inpt[1]}]
+endgroup
+startgroup
+set_property package_pin P14 [get_ports {inpt[2]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {inpt[3]}]
+endgroup
+startgroup
+set_property package_pin P9 [get_ports {inpt[4]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {inpt[5]}]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports {inpt[6]}]
+endgroup
+save_constraints
