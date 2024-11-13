@@ -8,7 +8,7 @@
 <br><br>
 
 ## Overview
-<img src="https://github.com/user-attachments/assets/23a67d46-4b34-4527-9c9f-32537e2af2e9" width="100%" height="1000"> 
+<img src="https://github.com/user-attachments/assets/23a67d46-4b34-4527-9c9f-32537e2af2e9" width="100%" height="800"> 
 <br><br>
 
 ## State Diagram
