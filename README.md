@@ -17,7 +17,7 @@
 
 ## Slot Machine
 ### Top Layer
-<img src="https://github.com/user-attachments/assets/d34062d4-0ac3-4d08-8348-2e2e4f5db0e1" width="100%" height="600"> 
+<img src="https://github.com/user-attachments/assets/d34062d4-0ac3-4d08-8348-2e2e4f5db0e1" width="100%" height="500"> 
 
 ### 2nd Layer
 ![Top(Slot) drawio (3)](https://github.com/user-attachments/assets/f2211fcb-0d83-467a-9a64-d726fea9db08)
