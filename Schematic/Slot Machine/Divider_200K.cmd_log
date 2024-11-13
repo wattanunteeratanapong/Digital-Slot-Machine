@@ -1,0 +1,2 @@
+vhdtdtfi -lib work dfsfsdf.vhd -prj Tart88888 -o Divider_200K.spl -module Divider_200K -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Divider_200K.spl /home/ise/Tart88888/Divider_200K.sym 

@@ -1,0 +1,156 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sun Nov 10 12:27:02 2024
+# Process ID: 14999
+# Log file: /home/ise/Tart88888/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/Tart88888/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -2751 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/ise/Tart88888/pa.fromHdl.tcl
+# create_project -name Tart88888 -dir "/home/ise/Tart88888/planAhead_run_1" -part xc6slx9tqg144-3
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2631.000 ; gain = 23.141
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "TopLayer.ucf" [current_fileset -constrset]
+Adding file '/home/ise/Tart88888/TopLayer.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {MUX213.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Comparator.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {vcbcv.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SymbolDecoder.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SlotDecoder.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SlotComparator.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MUX313.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Mod5.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Mod4.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Mod3.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {IsState4.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {dgfg.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {dfsfsdf.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {CommonControl.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {TopLayer.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top TopLayer $srcset
+# add_files [list {TopLayer.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/home/ise/Tart88888/vcbcv.vhd" into library work
+Parsing VHDL file "/home/ise/Tart88888/SlotDecoder.vhd" into library work
+Parsing VHDL file "/home/ise/Tart88888/Mod5.vhd" into library work
+Parsing VHDL file "/home/ise/Tart88888/Mod4.vhd" into library work
+Parsing VHDL file "/home/ise/Tart88888/Mod3.vhd" into library work
+Parsing VHDL file "/home/ise/Tart88888/dgfg.vhd" into library work
+Parsing VHDL file "/home/ise/Tart88888/dfsfsdf.vhd" into library work
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/ise/Tart88888/TopLayer.ucf]
+Finished Parsing UCF File [/home/ise/Tart88888/TopLayer.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: a1978b85
+open_rtl_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2785.570 ; gain = 145.559
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P41 [get_ports a]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports b]
+endgroup
+startgroup
+set_property package_pin P21 [get_ports BTN]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports c]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports Common0]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports Common1]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports Common2]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports Common3]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports d]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports e]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports f]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports g]
+endgroup
+startgroup
+set_property package_pin P82 [get_ports LED0]
+endgroup
+startgroup
+set_property package_pin P81 [get_ports LED1]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports LED2]
+endgroup
+startgroup
+set_property package_pin P142 [get_ports Same7]
+endgroup
+startgroup
+set_property package_pin P140 [get_ports Same8]
+endgroup
+startgroup
+set_property package_pin P138 [get_ports SameC]
+endgroup
+startgroup
+set_property package_pin P134 [get_ports SameL]
+endgroup
+save_constraints

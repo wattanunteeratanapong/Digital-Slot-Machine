@@ -1,0 +1,46 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CommonControl.vf
+// /___/   /\     Timestamp : 11/10/2024 12:26:55
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/ise/Tart88888/CommonControl.vf -w /home/ise/Tart88888/CommonControl.sch
+//Design Name: CommonControl
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module CommonControl(LSB, 
+                     MSB, 
+                     Common0, 
+                     Common1, 
+                     Common2, 
+                     Common3);
+
+    input LSB;
+    input MSB;
+   output Common0;
+   output Common1;
+   output Common2;
+   output Common3;
+   
+   
+   OR2  XLXI_1 (.I0(MSB), 
+               .I1(LSB), 
+               .O(Common0));
+   INV  XLXI_2 (.I(LSB), 
+               .O(Common1));
+   INV  XLXI_3 (.I(MSB), 
+               .O(Common2));
+   VCC  XLXI_4 (.P(Common3));
+endmodule
