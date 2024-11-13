@@ -24,7 +24,7 @@
 
 ## Cash Display
 ### Top Layer
-<img src="https://github.com/user-attachments/assets/377ad4c0-d4c4-45ba-9235-719b14992aca" width="100%" height="500"> 
+<img src="https://github.com/user-attachments/assets/377ad4c0-d4c4-45ba-9235-719b14992aca" width="100%" height="400"> 
 
 ### 2nd Layer
 <img src="https://github.com/user-attachments/assets/00a63345-e208-4dcb-bf9e-144a4e881ec0" width="100%" height="700"> 
