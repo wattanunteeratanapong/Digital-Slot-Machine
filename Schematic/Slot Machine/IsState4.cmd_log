@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -refsym IsState4 /home/ise/Tart88888/IsState4.sch /home/ise/Tart88888/IsState4.sym 
+sch2sym -intstyle ise -family spartan6 -refsym IsState4 /home/ise/Tart88888/IsState4.sch /home/ise/Tart88888/IsState4.sym 

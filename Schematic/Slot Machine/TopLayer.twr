@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml TopLayer.twx TopLayer.ncd -o TopLayer.twr TopLayer.pcf -ucf
+TopLayer.ucf
+
+Design file:              TopLayer.ncd
+Physical constraint file: TopLayer.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock BTN to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED0        |         7.836(R)|      SLOW  |         4.178(R)|      FAST  |BTN_BUFGP         |   0.000|
+LED1        |         7.854(R)|      SLOW  |         4.214(R)|      FAST  |BTN_BUFGP         |   0.000|
+LED2        |         8.186(R)|      SLOW  |         4.442(R)|      FAST  |BTN_BUFGP         |   0.000|
+Same7       |        10.331(R)|      SLOW  |         5.488(R)|      FAST  |BTN_BUFGP         |   0.000|
+Same8       |        10.462(R)|      SLOW  |         5.638(R)|      FAST  |BTN_BUFGP         |   0.000|
+SameC       |        10.705(R)|      SLOW  |         5.799(R)|      FAST  |BTN_BUFGP         |   0.000|
+SameL       |        10.118(R)|      SLOW  |         5.339(R)|      FAST  |BTN_BUFGP         |   0.000|
+a           |        10.967(R)|      SLOW  |         5.504(R)|      FAST  |BTN_BUFGP         |   0.000|
+b           |        11.176(R)|      SLOW  |         5.951(R)|      FAST  |BTN_BUFGP         |   0.000|
+c           |        10.722(R)|      SLOW  |         5.652(R)|      FAST  |BTN_BUFGP         |   0.000|
+d           |        11.315(R)|      SLOW  |         5.816(R)|      FAST  |BTN_BUFGP         |   0.000|
+e           |        11.096(R)|      SLOW  |         5.298(R)|      FAST  |BTN_BUFGP         |   0.000|
+f           |        10.754(R)|      SLOW  |         4.720(R)|      FAST  |BTN_BUFGP         |   0.000|
+g           |        11.127(R)|      SLOW  |         4.723(R)|      FAST  |BTN_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock BTN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+BTN            |    1.337|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.405|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun Nov 10 13:49:45 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 383 MB
+
+
+

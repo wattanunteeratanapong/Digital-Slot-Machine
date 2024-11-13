@@ -1,0 +1,94 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SymbolDecoder.vf
+// /___/   /\     Timestamp : 11/10/2024 12:26:55
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/ise/Tart88888/SymbolDecoder.vf -w /home/ise/Tart88888/SymbolDecoder.sch
+//Design Name: SymbolDecoder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module SymbolDecoder(B1, 
+                     B2, 
+                     LSB, 
+                     a, 
+                     b, 
+                     c, 
+                     d, 
+                     e, 
+                     f, 
+                     g);
+
+    input B1;
+    input B2;
+    input LSB;
+   output a;
+   output b;
+   output c;
+   output d;
+   output e;
+   output f;
+   output g;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_37;
+   wire XLXN_43;
+   wire XLXN_47;
+   wire XLXN_48;
+   wire XLXN_49;
+   wire XLXN_50;
+   
+   INV  XLXI_1 (.I(B1), 
+               .O(b));
+   INV  XLXI_2 (.I(B1), 
+               .O(c));
+   INV  XLXI_3 (.I(B1), 
+               .O(XLXN_2));
+   INV  XLXI_9 (.I(B2), 
+               .O(XLXN_1));
+   OR2  XLXI_25 (.I0(B1), 
+                .I1(LSB), 
+                .O(d));
+   OR3  XLXI_26 (.I0(B2), 
+                .I1(B1), 
+                .I2(LSB), 
+                .O(e));
+   OR3  XLXI_27 (.I0(B2), 
+                .I1(B1), 
+                .I2(LSB), 
+                .O(f));
+   OR2  XLXI_31 (.I0(B2), 
+                .I1(XLXN_37), 
+                .O(g));
+   AND2  XLXI_32 (.I0(LSB), 
+                 .I1(XLXN_43), 
+                 .O(XLXN_37));
+   INV  XLXI_35 (.I(B1), 
+                .O(XLXN_43));
+   AND2  XLXI_39 (.I0(XLXN_2), 
+                 .I1(XLXN_1), 
+                 .O(XLXN_49));
+   AND2  XLXI_40 (.I0(XLXN_48), 
+                 .I1(XLXN_47), 
+                 .O(XLXN_50));
+   INV  XLXI_41 (.I(B2), 
+                .O(XLXN_47));
+   INV  XLXI_42 (.I(LSB), 
+                .O(XLXN_48));
+   OR2  XLXI_43 (.I0(XLXN_50), 
+                .I1(XLXN_49), 
+                .O(a));
+endmodule

@@ -1,0 +1,5 @@
+MODULE SlotComparator
+	SUBMODULE Comparator
+		INSTANCE XLXI_1
+	SUBMODULE Comparator
+		INSTANCE XLXI_2

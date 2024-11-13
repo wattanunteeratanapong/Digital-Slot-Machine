@@ -1,0 +1,9 @@
+[Inputs]
+I2
+I1
+I0
+[Outputs]
+O0
+O1
+O2
+[BiDir]

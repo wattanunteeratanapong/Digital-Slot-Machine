@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : IsState4.vf
+// /___/   /\     Timestamp : 11/10/2024 12:26:55
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/ise/Tart88888/IsState4.vf -w /home/ise/Tart88888/IsState4.sch
+//Design Name: IsState4
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module IsState4(LSB, 
+                MID, 
+                MSB, 
+                IsState4);
+
+    input LSB;
+    input MID;
+    input MSB;
+   output IsState4;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   
+   INV  XLXI_1 (.I(LSB), 
+               .O(XLXN_3));
+   INV  XLXI_2 (.I(MID), 
+               .O(XLXN_4));
+   AND3  XLXI_3 (.I0(MSB), 
+                .I1(XLXN_4), 
+                .I2(XLXN_3), 
+                .O(IsState4));
+endmodule

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym SymbolDecoder /home/ise/Tart88888/SymbolDecoder.sch /home/ise/Tart88888/SymbolDecoder.sym 

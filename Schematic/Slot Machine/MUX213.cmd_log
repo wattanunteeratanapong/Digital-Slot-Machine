@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym MUX213 /home/ise/Tart88888/MUX213.sch /home/ise/Tart88888/MUX213.sym 
